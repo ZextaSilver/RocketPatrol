@@ -16,10 +16,10 @@ class Play extends Phaser.Scene{
         console.log(this);
 
         //white rectangle borders
-        this.add.rectangle(5, 5, 630, 32, 0xFACADE).setOrigin(0, 0);
-        this.add.rectangle(5, 443, 630, 32, 0xFACADE).setOrigin(0, 0);
-        this.add.rectangle(5, 5, 32, 455, 0xFACADE).setOrigin(0, 0);
-        this.add.rectangle(603, 5, 32, 455, 0xFACADE).setOrigin(0, 0);
+        this.add.rectangle(5, 5, 630, 32, 0xFFFFFF).setOrigin(0, 0);
+        this.add.rectangle(5, 443, 630, 32, 0xFFFFFF).setOrigin(0, 0);
+        this.add.rectangle(5, 5, 32, 455, 0xFFFFFF).setOrigin(0, 0);
+        this.add.rectangle(603, 5, 32, 455, 0xFFFFFF).setOrigin(0, 0);
 
 
         //green UI background
