@@ -12,7 +12,8 @@ class Play extends Phaser.Scene{
 
     create(){
         //place title sprite
-        this.starfield = this.add.titleSprite(0, 0, 640, 480, 'starfield');
+        this.starfield = this.add.titleSprite(0, 0, 640, 480, 'starfield').setOrigin(0, 0);
+        console.log(this);
 
         //white rectangle borders
         this.add.rectangle(5, 5, 630, 32, 0xFACADE).setOrigin(0, 0);
