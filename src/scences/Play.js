@@ -24,6 +24,10 @@ class Play extends Phaser.Scene{
 
         //green UI background
         this.add.rectangle(37, 42, 566, 64, 0x00FF00).setOrigin(0, 0);
+
+        // add rocket (p1)
+        this.p1Rocket = new Rocket(this, game.config.width / 2, 435, 'rocket');
+
     }
 
     update(){
