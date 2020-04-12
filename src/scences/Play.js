@@ -52,7 +52,7 @@ class Play extends Phaser.Scene{
         this.ship03.update();
 
         //update rocket-ship collision
-        checkCollision(rocket,ship) {
+        checkCollision(rocket, ship) {
             //simple AABB checking
             if(rocket.x < ship.x + ship.width &&
                rocket.x + rocket.width > ship.x &&
