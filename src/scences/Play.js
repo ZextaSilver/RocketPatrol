@@ -52,14 +52,14 @@ class Play extends Phaser.Scene{
         this.ship03.update();
 
         //check rocket-ship collision per frame
-        if(this.checkCollision(this.p1Rocket, this.ship01)){
-            console.log("ship 01 has been eliminated");
+        if(this.checkCollision(this.p1Rocket, this.ship03)){
+            console.log('ship 03 has been eliminated');
         }
         if(this.checkCollision(this.p1Rocket, this.ship02)){
-            console.log("ship 02 has been eliminated");
+            console.log('ship 02 has been eliminated');
         }
-        if(this.checkCollision(this.p1Rocket, this.ship03)){
-            console.log("ship 03 has been eliminated");
+        if(this.checkCollision(this.p1Rocket, this.ship01)){
+            console.log('ship 01 has been eliminated');
         }
     }
 
