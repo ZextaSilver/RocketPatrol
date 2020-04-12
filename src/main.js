@@ -1,4 +1,3 @@
-// Set up of the screen and type of the game
 let config = {
     type: Phaser.CANVAS,
     width: 640,
@@ -8,5 +7,5 @@ let config = {
 
 let game = new Phaser.Game(config);
 
-//reserve some keyboard variables
+// reserve some keyboard variables
 let keyF, keyLEFT, keyRIGHT;
