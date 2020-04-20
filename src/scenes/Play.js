@@ -10,7 +10,7 @@ class Play extends Phaser.Scene {
         this.load.image('fastship', './assets/fastship.png');
         this.load.image('starfield', './assets/starfield.png');
         this.load.image('meteoroidfield', './assets/meteoroidfield.png');
-        this.load.spritesheet('explosion', './assets/explosion.png', {frameWidth: 64, frameHeight: 32, startFrame: 0, endFrame: 9});
+        this.load.spritesheet('explosion', './assets/explosion.png', {frameWidth: 38, frameHeight: 32, startFrame: 0, endFrame: 11});
     }
 
     create() {
@@ -49,7 +49,7 @@ class Play extends Phaser.Scene {
         // animation config
         this.anims.create({
             key: 'explode',
-            frames: this.anims.generateFrameNumbers('explosion', { start: 0, end: 9, first: 0}),
+            frames: this.anims.generateFrameNumbers('explosion', { start: 0, end: 11, first: 0}),
             frameRate: 30
         });
 
