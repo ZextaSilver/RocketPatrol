@@ -10,6 +10,10 @@ class Play extends Phaser.Scene {
         this.load.image('fastship', './assets/fastship.png');
         this.load.image('starfield', './assets/starfield.png');
         this.load.image('meteoroidfield', './assets/meteoroidfield.png');
+        this.load.image('UItop', './assets/UItop.png');
+        this.load.image('UIbottom', './assets/UIbottom.png');
+        this.load.image('UIleft', './assets/UIleft.png');
+        this.load.image('UIright', './assets/UIright.png');
         this.load.spritesheet('explosion', './assets/explosion.png', {frameWidth: 38, frameHeight: 32, startFrame: 0, endFrame: 11});
     }
 
@@ -32,10 +36,10 @@ class Play extends Phaser.Scene {
         this.ship03 = new Spaceship(this, game.config.width, 300, 'spaceship', 0, 10).setOrigin(0, 0);
 
         // white rectangle borders
-        this.add.rectangle(5, 5, 630, 32, 0xFFFFFF).setOrigin(0, 0);
-        this.add.rectangle(5, 443, 630, 32, 0xFFFFFF).setOrigin(0, 0);
-        this.add.rectangle(5, 5, 32, 455, 0xFFFFFF).setOrigin(0, 0);
-        this.add.rectangle(603, 5, 32, 455, 0xFFFFFF).setOrigin(0, 0);
+        this.add.tileSprite(5, 5, 630, 32, 'UItop').setOrigin(0, 0);
+        this.add.tileSprite(5, 443, 630, 32, 'UIbottom').setOrigin(0, 0);
+        this.add.tileSprite(5, 5, 32, 455, 'UIleft').setOrigin(0, 0);
+        this.add.tileSprite(603, 5, 32, 455, 'UIright').setOrigin(0, 0);
         // green UI background
         this.add.rectangle(37, 42, 566, 64, 0x00FF00).setOrigin(0, 0);
 
