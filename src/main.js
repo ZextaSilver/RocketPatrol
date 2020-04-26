@@ -1,3 +1,10 @@
+//Create a new scrolling tile sprite for the background (10)
+//Allow the player to control the Rocket after it's fired (10)
+//Replace the UI borders with new artwork (15)
+//Create a new animated sprite for the Spaceship enemies (15)
+//Create new artwork for all of the in-game assets (rocket, spaceships, explosion) (25) 
+//Create a new spaceship type (w/ new artwork) that's smaller, moves faster, and is worth more points (25)
+
 let config = {
     type: Phaser.CANVAS,
     width: 640,
